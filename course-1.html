@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course-1</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap 5 JS (for modal functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<style>
+    .header{
+        background: linear-gradient(45deg, rgb(168, 244, 168), rgb(61, 61, 147));
+    }
+    a{
+        text-decoration: none;
+    }
+    /* WhatsApp Floating Button Styles */
+    .whatsapp-float {
+        position: fixed;
+        width: 45px;
+        height: 45px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+        animation: whatsapp-blink 2s infinite;
+    }
+    .whatsapp-float:hover {
+        text-decoration: none;
+        color: #FFF;
+        background-color: #20ba5a;
+    }
+    .whatsapp-icon {
+        margin-top: 16px;
+    }
+    @keyframes whatsapp-blink {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+    
+    /* Hide floating button on small screens if needed */
+    @media (max-width: 768px) {
+        .whatsapp-float {
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+        }
+        .whatsapp-icon {
+            margin-top: 12px;
+        }
+    }
+</style>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="home.html" class="logo"> <img src="images/logo2.png" alt="" height="50" width="80">  </a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="#">courses +</a>
+                <ul>
+                    <li><a href="course-1.html">course 01</a></li>
+                    <li><a href="course-2.html">course 02</a></li>
+                    <li><a href="course-3.html">course 03</a></li>
+                </ul>
+            </li>
+            <li><a href="#">pages +</a>
+                <ul>
+                    <li><a href="teachers.html">teachers</a></li>
+                    <li><a href="blog.html">blogs</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+<!-- header section ends -->
+
+<section class="heading">
+    <h3>course 01</h3>
+    <p> <a href="home.html">home >></a> course-1 </p>
+</section>
+
+<!-- course-1 section starts  -->
+
+<section class="course-1">
+
+    <div class="box">
+        <img src="images/course-1.png" alt="">
+        <h3>basic computer course</h3>
+        <p>Introduction to essential computer skills including MS Office, software installation, and operating systems.</p>
+        <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#courseModal" 
+           data-bs-title="Basic Computer Course" 
+           data-bs-desc="This course covers foundational computer skills for beginners, including Microsoft Office suite (Word, Excel, PowerPoint), basic software installation, troubleshooting, and an overview of operating systems like Windows and Linux." 
+           data-bs-img="images/course-1.png"
+           data-bs-duration="4 weeks"
+           data-bs-instructor="Ms. Fizza"
+           data-bs-price="3500PKR or 15USD"
+           data-bs-level="Beginner"
+           data-bs-syllabus="Module 1: Computer Basics & Hardware<br>Module 2: Operating Systems (Windows & Linux)<br>Module 3: MS Word & Document Editing<br>Module 4: MS Excel & Data Analysis<br>Module 5: MS PowerPoint & Presentations<br>Module 6: Software Installation & Troubleshooting<br>Module 7: File Management & Internet Basics<br>Module 8: Final Project: Create a Professional Report" style="font-size:medium; border: 1px solid black;">read more</a>
+    </div>
+
+    <div class="box">
+        <img src="images/course-2.png" alt="">
+        <h3>basic web development</h3>
+        <p>Fundamentals of frontend web development using HTML, CSS, and JavaScript.</p>
+        <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#courseModal" 
+           data-bs-title="Basic Web Development" 
+           data-bs-desc="Learn the basics of web development with a focus on frontend technologies: HTML for structure, CSS for styling, and JavaScript for interactivity." 
+           data-bs-img="images/course-2.png"
+           data-bs-duration="6 weeks"
+           data-bs-instructor="Ms. Sawera Nadeem"
+           data-bs-price="15USD or 3500PKR"
+           data-bs-level="Beginner"
+           data-bs-syllabus="Module 1: Introduction to Web Development<br>Module 2: HTML Fundamentals<br>Module 3: CSS Basics & Styling<br>Module 4: Responsive Design with CSS<br>Module 5: JavaScript Essentials<br>Module 6: DOM Manipulation & Events<br>Module 7: Building a Simple Website<br>Module 8: Project: Personal Portfolio Site<br>Module 9: Debugging & Best Practices<br>Module 10: Introduction to Tools (VS Code, Git)" style="font-size:medium; border: 1px solid black;">read more</a>
+    </div>
+
+    <div class="box">
+        <img src="images/course-3.png" alt="">
+        <h3>advanced web development (Registrations are Open) 🎉</h3>
+        <p>Advanced frontend and full-stack development using modern frameworks and MERN stack.</p>
+        <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#courseModal" 
+           data-bs-title="Advanced Web Development" 
+           data-bs-desc="Dive into advanced web development with frameworks like React, Node.js, Express, and MongoDB (MERN stack) to build dynamic, full-stack applications." 
+           data-bs-img="images/course-3.png"
+           data-bs-duration="12 weeks"
+           data-bs-instructor="Ms. Sawera Nadeem"
+           data-bs-price="5000PKR or 18USD"
+           data-bs-level="Intermediate"
+           data-bs-syllabus="Module 1: Review of HTML/CSS/JS<br>Module 2: React Fundamentals<br>Module 3: React Components & State<br>Module 4: Hooks & Context API<br>Module 5: Node.js & Express Backend<br>Module 6: MongoDB Database<br>Module 7: API Development & Integration<br>Module 8: Authentication & Security<br>Module 9: Deployment (Heroku/Netlify)<br>Module 10: Advanced Topics (Redux, Testing)<br>Module 11: Performance Optimization<br>Module 12: Capstone Project: Full MERN App" style="font-size:medium; border: 1px solid black;">read more</a>
+    </div>
+
+    <div class="box">
+        <img src="images/course-4.png" alt="">
+        <h3>ui/ux using figma</h3>
+        <p>Design user interfaces and experiences using Figma for modern web and app prototyping.</p>
+        <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#courseModal" 
+           data-bs-title="UI/UX Using Figma" 
+           data-bs-desc="Master UI/UX design principles and hands-on prototyping with Figma, including wireframing, user flows, and collaborative design workflows." 
+           data-bs-img="images/course-4.png"
+           data-bs-duration="6 weeks"
+           data-bs-instructor="Mr. Ahmed"
+           data-bs-price="2000PKR or 10USD"
+           data-bs-level="Beginner to Intermediate"
+           data-bs-syllabus="Module 1: UI/UX Design Principles<br>Module 2: Introduction to Figma Interface<br>Module 3: Wireframing & Low-Fidelity Designs<br>Module 4: High-Fidelity Prototyping<br>Module 5: User Research & Flows<br>Module 6: Components & Auto-Layout<br>Module 7: Collaboration & Plugins<br>Module 8: Accessibility & Responsive Design<br>Module 9: Exporting & Handoff to Developers<br>Module 10: Project: Design a Mobile App UI" style="font-size:medium; border: 1px solid black;">read more</a>
+    </div>
+
+    <div class="box">
+        <img src="images/course-5.png" alt="">
+        <h3>python programming and ml</h3>
+        <p>Python programming fundamentals leading to machine learning applications.</p>
+        <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#courseModal" 
+           data-bs-title="Python Programming and Machine Learning" 
+           data-bs-desc="Start with Python basics and progress to machine learning concepts, including data handling, algorithms, and building simple ML models using libraries like NumPy, Pandas, and Scikit-learn." 
+           data-bs-img="images/course-5.png"
+           data-bs-duration="10 weeks"
+           data-bs-instructor="Ms. Sawera Nadeem"
+           data-bs-price="10,000PKR or 36USD"
+           data-bs-level="Beginner to Advanced"
+           data-bs-syllabus="Module 1: Python Basics (Variables, Loops)<br>Module 2: Functions & Data Structures<br>Module 3: Object-Oriented Programming<br>Module 4: File Handling & Libraries (NumPy, Pandas)<br>Module 5: Data Visualization (Matplotlib, Seaborn)<br>Module 6: Introduction to Machine Learning<br>Module 7: Supervised Learning (Regression, Classification)<br>Module 8: Unsupervised Learning (Clustering)<br>Module 9: Model Evaluation & Tuning<br>Module 10: Projects: Build ML Models for Prediction<br>Module 11: Ethics in AI & Deployment Basics<br>Module 12: Advanced Topics (Neural Networks Intro)" style="font-size:medium; border: 1px solid black;">read more</a>
+    </div>
+
+</section>
+
+<!-- course-1 section ends -->
+
+<!-- Bootstrap Modal for Course Details -->
+<div class="modal fade" id="courseModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="courseModalLabel">Course Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img id="modalImg" src="" alt="" class="img-fluid mb-3" style="max-height: 250px; object-fit: cover; width: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                        <h3 id="modalTitle" class="mb-3"></h3>
+                        <p id="modalDesc" class="lead mb-3"></p>
+                        
+                        <!-- Additional Details -->
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <strong>Duration:</strong> <span id="modalDuration"></span>
+                            </div>
+                            <div class="col-6">
+                                <strong>Level:</strong> <span id="modalLevel"></span>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <strong>Instructor:</strong> <span id="modalInstructor"></span>
+                            </div>
+                            <div class="col-6">
+                                <strong>Price:</strong> <span id="modalPrice"></span>
+                            </div>
+                        </div>
+                        
+                        <!-- Syllabus -->
+                        <h5 class="mt-4 mb-3">Syllabus</h5>
+                        <div id="modalSyllabus" class="list-group list-group-flush"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSegEvEkLN_3Rn1z8vTuEEfs-MDEir4sK_G140YUBTU9amlgGA/viewform?usp=sharing&ouid=115013462842637672126" class="btn btn-primary" id="enrollBtn">Enroll Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>explore</h3>
+            <a href="home.html"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="course-1.html"> <i class="fas fa-arrow-right"></i> course-1 </a>
+            <a href="course-2.html"> <i class="fas fa-arrow-right"></i>course-2 </a>
+            <a href="course-3.html"> <i class="fas fa-arrow-right"></i> course-3 </a>
+            <a href="teachers.html"> <i class="fas fa-arrow-right"></i> teachers </a>
+            <a href="blog.html"> <i class="fas fa-arrow-right"></i> blog </a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+
+        <div class="box">
+            <h3>categories</h3>
+            <a href="course-1.html"> <i class="fas fa-arrow-right"></i> web design </a>
+            <a href="course-1.html"> <i class="fas fa-arrow-right"></i> graphic design</a>
+            <a href="course-1.html"> <i class="fas fa-arrow-right"></i> UI / UX design</a>
+            <a href="course-1.html"> <i class="fas fa-arrow-right"></i> Python Programming</a>
+            <a href="course-1.html"> <i class="fas fa-arrow-right"></i> MS Office</a>
+            <a href="course-1.html"> <i class="fas fa-arrow-right"></i> Advance Web Development</a>
+            <a href="course-1.html"> <i class="fas fa-arrow-right"></i> all courses</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="https://www.facebook.com/SkillWorldComputerAcademy/"> <i class="fas fa-arrow-right"></i> my account </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> feedback </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> help center </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> certificates </a>
+            <!-- <a href="#"> <i class="fas fa-arrow-right"></i> newsletter </a> -->
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/SkillWorldComputerAcademy/"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <!-- <a href="#"> <i class="fab fa-twitter"></i> twitter </a> -->
+            <a href="https://www.linkedin.com/company/skill-world-computer-academy"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <!-- <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a> -->
+            <a href="#"> <i class="fab fa-github"></i> github </a>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>SAWERA NADEEM</span> | all rights reserved!  &copy;</div>
+
+</section>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/923167026298?text=Hi!%20I'm%20interested%20in%20your%20courses.%20Can%20you%20provide%20more%20information?" 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- footer section ends -->
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<!-- JavaScript for Modal Population -->
+<script>
+    var courseModal = document.getElementById('courseModal');
+    courseModal.addEventListener('show.bs.modal', function (event) {
+        // Get the button that triggered the modal
+        var button = event.relatedTarget;
+        // Extract info from data-bs-* attributes
+        var title = button.getAttribute('data-bs-title');
+        var desc = button.getAttribute('data-bs-desc');
+        var img = button.getAttribute('data-bs-img');
+        var duration = button.getAttribute('data-bs-duration');
+        var instructor = button.getAttribute('data-bs-instructor');
+        var price = button.getAttribute('data-bs-price');
+        var level = button.getAttribute('data-bs-level');
+        var syllabus = button.getAttribute('data-bs-syllabus');
+        
+        // Update the modal's elements
+        var modalTitle = courseModal.querySelector('#modalTitle');
+        var modalDesc = courseModal.querySelector('#modalDesc');
+        var modalImg = courseModal.querySelector('#modalImg');
+        var modalDuration = courseModal.querySelector('#modalDuration');
+        var modalInstructor = courseModal.querySelector('#modalInstructor');
+        var modalPrice = courseModal.querySelector('#modalPrice');
+        var modalLevel = courseModal.querySelector('#modalLevel');
+        var modalSyllabus = courseModal.querySelector('#modalSyllabus');
+        
+        modalTitle.textContent = title;
+        modalDesc.textContent = desc;
+        modalImg.src = img;
+        modalImg.alt = title;
+        modalDuration.textContent = duration;
+        modalInstructor.textContent = instructor;
+        modalPrice.textContent = price;
+        modalLevel.textContent = level;
+        
+        // Populate syllabus as a list
+        modalSyllabus.innerHTML = '';
+        var syllabusItems = syllabus.split('<br>');
+        syllabusItems.forEach(function(item) {
+            if (item.trim() !== '') {
+                var listItem = document.createElement('div');
+                listItem.className = 'list-group-item';
+                listItem.innerHTML = '<i class="fas fa-check-circle text-success me-2"></i>' + item.trim();
+                modalSyllabus.appendChild(listItem);
+            }
+        });
+        
+        // Optional: Update enroll button href if you have specific enrollment links
+        // document.getElementById('enrollBtn').href = 'your-enrollment-link-for-' + title.toLowerCase().replace(/\s+/g, '-');
+    });
+</script>
+
+</body>
+</html>
